@@ -3,34 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Profile</title>
+    <title>Mon's Klink</title>
     <style>
+        /* General Styles */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             text-align: center;
             padding: 20px;
+            background: linear-gradient(135deg, #4CAF50, #1e88e5);
+            color: #fff;
+            margin: 0;
         }
         h1 {
-            color: #4CAF50;
+            font-size: 2.5em;
+            margin-top: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            animation: fadeIn 3s ease-in-out;
         }
         a {
-            display: block;
-            margin: 10px 0;
+            display: inline-block;
+            margin: 15px 10px;
+            padding: 12px 20px;
             text-decoration: none;
-            color: #007BFF;
+            color: #fff;
             font-size: 1.2em;
+            border: 2px solid #fff;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+            animation: bounce 2s infinite ease-in-out;
         }
         a:hover {
-            color: #0056b3;
+            background-color: rgba(255, 255, 255, 0.2);
+            transform: scale(1.1);
+        }
+
+        /* Footer Styles */
+        footer {
+            margin-top: 30px;
+            padding: 20px 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            font-size: 1em;
+            border-radius: 10px;
+        }
+        footer a {
+            color: #FFD700;
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            a {
+                font-size: 1em;
+                margin: 10px 5px;
+            }
+            footer {
+                font-size: 0.9em;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to My Profile</h1>
-    <p>Here are my social handles and resume:</p>
-    <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
-    <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-    <a href="https://twitter.com/yourhandle" target="_blank">Twitter</a>
-    <a href="/path/to/your-resume.pdf" target="_blank">Download Resume</a>
+    <h1>Welcome to My Social Presence</h1>
+    <p>Luv, Peace, Unity</p>
+
+    <!-- Social Links -->
+    <a href="https://www.linkedin.com/in/monika-mittal-2b3738269?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">LinkedIn</a>
+    <a href="https://www.instagram.com/xo.moniikaaa?igsh=MWdpYW1nMGZkdndjbQ==" target="_blank">Instagram</a>
+    <a href="https://www.instagram.com/paintwithmon?igsh=MWM4d2xsODMyY2k1eg==" target="_blank">My Painting Account</a>
+    <a href="https://snapchat.com/t/JbGzo9GU" target="_blank">Snapchat</a>
+
+    <!-- Footer -->
+    <footer>
+        <p>Email: <a href="mailto:yourname@example.com">yourname@example.com</a></p>
+        <p>For business inquiries, contact me at <strong>+1 234 567 8901</strong>.</p>
+    </footer>
 </body>
 </html>

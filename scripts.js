@@ -19,3 +19,18 @@ document.querySelector('.contact-form').addEventListener('submit', function (e) 
     }
   });
 
+
+  window.addEventListener("load", () => {
+    // After rotation (2s), zoom in
+    setTimeout(() => {
+      document.getElementById("loader").classList.add("zoom-out");
+    }, 1000);
+
+    // After zoom (0.5s more), remove loader
+    setTimeout(() => {
+      document.body.classList.add("loaded");
+    }, 500);
+  });
+
+
+

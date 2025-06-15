@@ -29,8 +29,22 @@ document.querySelector('.contact-form').addEventListener('submit', function (e) 
     // After zoom (0.5s more), remove loader
     setTimeout(() => {
       document.body.classList.add("loaded");
-    }, 500);
+    }, 1000);
   });
 
+ const cursor = document.querySelector(".custom-cursor");
 
+  document.addEventListener("mousemove", (e) => {
+    cursor.style.top = e.clientY + "px";
+    cursor.style.left = e.clientX + "px";
+  });
+
+  // Optional: Add click effect
+  document.addEventListener("mousedown", () => {
+    cursor.style.transform = "translate(-50%, -50%) scale(1.5)";
+  });
+
+  document.addEventListener("mouseup", () => {
+    cursor.style.transform = "translate(-50%, -50%) scale(1)";
+  });
 

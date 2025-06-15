@@ -26,6 +26,21 @@ html{
 body{
     background: var(--bg-color);
     color: var(--text-color);
+    cursor: none;
+}
+
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  border: 2px solid var(--main-color);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease-out, width 0.2s, height 0.2s;
 }
 
 /* Loader container */
@@ -695,9 +710,9 @@ input:invalid, textarea:invalid {
 
 /* RESPONSIVE DESIGN */
 @media (max-width: 1024px) {
-    html {
+    /* html {
         font-size: 55%;
-    }
+    } */
 
     .home {
         flex-direction: column;
@@ -781,7 +796,7 @@ input:invalid, textarea:invalid {
 
   #menu-icon {
     display: block;
-    font-size: 2rem;
+    font-size: 10rem;
     cursor: pointer;
     position: absolute;
     top: 1rem;

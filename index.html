@@ -1,108 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon's Klink</title>
-    <style>
-        /* General Styles */
-        body {
-            font-family: 'Arial', sans-serif;
-            text-align: center;
-            padding: 20px;
-            background: linear-gradient(135deg, #4CAF50, #1e88e5);
-            color: #fff;
-            margin: 0;
-        }
-        h1 {
-            font-size: 2.5em;
-            margin-top: 20px;
-            animation: fadeIn 2s ease-in-out;
-        }
-        p {
-            font-size: 1.2em;
-            margin-bottom: 20px;
-            animation: fadeIn 3s ease-in-out;
-        }
-        a {
-            display: inline-block;
-            margin: 15px 10px;
-            padding: 12px 20px;
-            text-decoration: none;
-            color: #fff;
-            font-size: 1.2em;
-            border: 2px solid #fff;
-            border-radius: 30px;
-            transition: all 0.3s ease;
-            animation: bounce 2s infinite ease-in-out;
-        }
-        a:hover {
-            background-color: rgba(255, 255, 255, 0.2);
-            transform: scale(1.1);
-        }
-
-        /* Footer Styles */
-        footer {
-            margin-top: 30px;
-            padding: 20px 10px;
-            background-color: rgba(0, 0, 0, 0.5);
-            color: #fff;
-            font-size: 1em;
-            border-radius: 10px;
-        }
-        footer a {
-            color: #FFD700;
-            text-decoration: underline;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2em;
-            }
-            a {
-                font-size: 1em;
-                margin: 10px 5px;
-            }
-            footer {
-                font-size: 0.9em;
-            }
-        }
-
-        /* Animations */
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-
-        @keyframes bounce {
-            0%, 100% {
-                transform: translateY(0);
-            }
-            50% {
-                transform: translateY(-10px);
-            }
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Monika Mittal</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
 </head>
 <body>
-    <h1>Welcome to My Social Presence</h1>
-    <p>Psych Major</p>
+  <header class="header">
+    <a href="#home" class="logo">Monika <span>Mittal</span></a>
+    <i class="bx bx-menu" id="menu-icon"></i>
+    <nav class="navbar">
+      <a href="#home" class="active">Home</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    <!-- Social Links -->
-    <a href="https://www.linkedin.com/in/monika-mittal-2b3738269?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">LinkedIn</a>
-    <a href="https://www.instagram.com/xo.moniikaaa?igsh=MWdpYW1nMGZkdndjbQ==" target="_blank">Instagram</a>
-    <a href="https://www.instagram.com/paintwithmon?igsh=MWM4d2xsODMyY2k1eg==" target="_blank">My Painting Account</a>
-    <a href="https://snapchat.com/t/JbGzo9GU" target="_blank">Snapchat</a>
+  <section class="home" id="home">
+    <div class="home-content">
+      <h1>Hi It's <span>Monika</span></h1><br />
+      <h3 class="text-animation">I'm a <span></span></h3>
+      <p>Aspiring Psychologist | Master’s in Clinical Psychology | Clinical Psychology graduate.</p>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/monika-mittal-2b3738269?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/xo.moniikaaa?igsh=MWdpYW1nMGZkdndjbQ=="><i class="fab fa-instagram"></i></a>
+        <a href="https://www.instagram.com/paintwithmon?igsh=MWM4d2xsODMyY2k1eg=="><i class="fa-solid fa-palette"></i></a>
+        <a href="mailto:mittalmonika022@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+      <div class="btn-group">
+        <a href="#experience" class="btn">Works</a>
+        <a href="#contact" class="btn">Contact</a>
+      </div>
+    </div>
+    <div class="home-img">
+      <img src="images/image.JPG" alt="" />
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>Email: <a href="mailto:yourname@example.com">monikamittal022@gmail.com</a></p>
-        <p>For business inquiries, contact me at <strong>+91 9520570528</strong>.</p>
-    </footer>
+  <section class="education" id="education">
+    <h2 class="heading">Education</h2>
+    <div class="timeline-items">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2019 - 2021</div>
+        <div class="timeline-content">
+          <h3>St. Patrick's Jr. College</h3>
+          <p>Did my high school from this college in Agra</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2021 - 2024</div>
+        <div class="timeline-content">
+          <h3>SGT UNIVERSITY</h3>
+          <p>Bachelors in Clinical Psychology from Gurgaon</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2024 - 2026</div>
+        <div class="timeline-content">
+          <h3>Christ University</h3>
+          <p>Master’s in Clinical Psychology from Delhi, NCR</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="experience" id="experience">
+  <h2 class="heading">Experience</h2>
+  <div class="timeline-items">
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">Feb 2023 – May 2023</div>
+      <div class="timeline-content">
+        <h3>Mission Hospital - Intern</h3>
+        <p>
+          Conducted case history interviews, Mental Status Examinations (MSE), assisted in psychometric assessments, and supported therapeutic documentation under supervision.
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">Feb 2024 – Mar 2024</div>
+      <div class="timeline-content">
+        <h3>Blossom Clinic - Intern</h3>
+        <p>
+          Observed therapy sessions, conducted client assessments, prepared psychoeducational material, and participated in mental health initiatives.
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">Aug 2024 – Oct 2024</div>
+      <div class="timeline-content">
+        <h3>SPYM - Intern</h3>
+        <p>
+          Worked with substance use cases, helped in group sessions, relapse prevention programs, and family meetings for rehabilitation.
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">Jan 2025 – Apr 2025</div>
+      <div class="timeline-content">
+        <h3>Adhyayan Inclusive Centre - Intern</h3>
+        <p>
+          Supported children with Autism, ADHD, Down Syndrome using academic and therapeutic tools; promoted inclusion and engagement.
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">May 2025 – Present</div>
+      <div class="timeline-content">
+        <h3>IMHH Agra - Intern</h3>
+        <p>
+          Administered psychological assessments (Rorschach, DAPT), took patient histories and MSEs, and worked across diverse mental health cases.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- About Section -->
+<section class="about" id="about">
+  <h2 class="heading">About <span>Me</span></h2>
+  <div class="about-container">
+    <div class="about-text">
+      <h3>This is Me</h3>
+      <p>
+        I am a passionate psychology student who thrives on understanding the human mind and behavior. 
+        With a deep interest in mental health and therapy, I constantly strive to grow, learn, and make 
+        a difference in people’s lives through empathy, research, and continuous self-development. 
+        Whether it’s through internships or academic pursuits, I bring dedication, curiosity, and compassion to everything I do.
+      </p>
+    </div>
+     <div class="aur-divider">और</div>
+    <div class="about-img">
+      <img src="images/IMG.JPG" alt="About Me Image">
+    </div>
+  </div>
+</section>
+
+ <section class="contact" id="contact">
+  <h2 class="heading">Let's <span>Connect</span></h2>
+  <form class="contact-form">
+    <input type="text" placeholder="Your Name" required />
+    <input type="email" placeholder="Your Email" required />
+    <textarea placeholder="Your Message" rows="6" required></textarea>
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+</section>
+
+<footer class="footer">
+  <div class="footer-content">
+    <div class="social-links">
+      <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="#" target="_blank"><i class="fa-solid fa-palette"></i></a>
+      <a href="#" target="_blank"><i class="fas fa-envelope"></i></a>
+    </div>
+    <p>&copy; 2025 Monika Mittal. All rights reserved.</p>
+  </div>
+</footer>
+
+
+  <script src="scripts.js"></script>
 </body>
 </html>
